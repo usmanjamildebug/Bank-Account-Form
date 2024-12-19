@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Bank info</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h4 style="color: white;">
+                    Bank Account Opening Form
+                </h4>
+            </div>
+        </div>
+        <!-- Account type and salary heading -->
+        <div class="row mt-3">
+            <div class="col">
+                <h5 style="font-size: 1.2vw; color: white;">Account Type</h5>
+            </div>
+            <div class="col">
+                <h5 style="font-size: 1.2vw; color: white;">Monthly Salary</h5>
+            </div>
+        </div>
+        <!-- Input fields for account type and salary -->
+        <div class="row">
+            <div class="col">
+                <select
+                    style="width: 100%; padding: .5vw .7vw; font-size: 1vw; color: rgba(0, 0, 0, 0.555); border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 5px;" id="accounttype">
+                    <option value="General Account">General Account</option>
+                    <option value="Saving Account">Saving Account</option>
+                    <option value="Current Account">Current Account</option>
+                    <option value="Freelancer Digital Account">Freelancer Digital Account</option>
+                </select>
+            </div>
+            <div class="col">
+                <input type="text"
+                    style="width: 100%; padding: .5vw .7vw; font-size: 1vw; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 5px;" id="salary">
+            </div>
+        </div>
+        <!-- Name heading -->
+        <div class="row mt-3">
+            <div class="col">
+                <h5 style="font-size: 1.2vw; color: white;">Name</h5>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+        <!-- Input fields for name -->
+        <div class="row">
+            <div class="col">
+                <input type="text" placeholder="First"
+                    style="width: 100%; padding: .5vw .7vw; font-size: 1vw; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 5px;" id="firstname">
+            </div>
+            <div class="col">
+                <input type="text" placeholder="Last"
+                    style="width: 100%; padding: .5vw .7vw; font-size: 1vw; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 5px;" id="lastname">
+            </div>
+        </div>
+        <!-- Phone & CNIC heading -->
+        <div class="row mt-3">
+            <div class="col">
+                <h5 style="font-size: 1.2vw; color: white;">Phone</h5>
+            </div>
+            <div class="col">
+                <h5 style="font-size: 1.2vw; color: white;">CNIC No.</h5>
+            </div>
+        </div>
+        <!-- Input fields for Phone -->
+        <div class="row">
+            <div class="col">
+                <input type="number" placeholder="### ### ####"
+                    style="width: 100%; padding: .5vw .7vw; font-size: 1vw; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 5px;" id="phonenumber">
+            </div>
+            <div class="col">
+                <input type="number" placeholder="*****-*******-*"
+                    style="width: 100%; padding: .5vw .7vw; font-size: 1vw; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 5px;" id="cnic">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <h5 style="font-size: 1.2vw; color: white;">Address</h5>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <input type="text" placeholder="Street Address"
+                    style="width: 100%; padding: .5vw .7vw; font-size: 1vw; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 5px;" id="street">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <input type="text" placeholder="Street Address line 2"
+                    style="width: 100%; padding: .5vw .7vw; font-size: 1vw; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 5px;" id="street-2">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <input type="text" placeholder="City"
+                    style="width: 100%; padding: .5vw .7vw; font-size: 1vw; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 5px;" id="city">
+            </div>
+            <div class="col">
+                <input type="text" placeholder="Region"
+                    style="width: 100%; padding: .5vw .7vw; font-size: 1vw; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 5px;" id="region">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <input type="text" placeholder="Postal/Zip Code"
+                    style="width: 100%; padding: .5vw .7vw; font-size: 1vw; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 5px;" id="zidcode">
+            </div>
+            <div class="col">
+                <select
+                    style="width: 100%; padding: .5vw .7vw; font-size: 1vw; color: rgba(0, 0, 0, 0.555); border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 5px;" id="country">
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="UAE">UAE</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Kuwait">Kuwait</option>
+                </select>
+            </div>
+        </div>
+        <!-- buttons for submit and back -->
+        <div class="row mt-3">
+            <div class="col">
+
+            </div>
+            <div class="col text-end">
+                <button type="button" style="color: white; background: rgba(0, 0, 0, 0.75); border: 1px solid transparent; padding: .3vw 1vw; font-size: 1.2vw; font-weight: 599; border-radius: 10px;">Back</button>
+                <button type="button" style="color: white; background: #01AA97; border: 1px solid transparent; padding: .3vw 1vw; font-size: 1.2vw; font-weight: 599; border-radius: 10px; margin-left: .7vw;" onclick="account(),fullName(),phone(),address()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+</html>
